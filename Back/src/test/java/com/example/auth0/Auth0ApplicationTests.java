@@ -1,10 +1,10 @@
-package com.example.auth0api;
+package com.example.auth0;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Auth0ApiApplicationTests {
+class Auth0ApplicationTests {
 
 	@Test
 	void contextLoads() {

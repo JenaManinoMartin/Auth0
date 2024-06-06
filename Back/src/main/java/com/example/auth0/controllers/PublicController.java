@@ -1,4 +1,4 @@
-package com.example.auth0api.controllers;
+package com.example.auth0.controllers;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

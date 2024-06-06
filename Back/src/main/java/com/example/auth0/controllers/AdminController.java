@@ -1,4 +1,5 @@
-package com.example.auth0api.controllers;
+package com.example.auth0.controllers;
+
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdminController {
 
     @GetMapping(value = "")
+    @PreAuthorize("hasAuthority('administrador')")
     public ResponseEntity<?> publicEndpoint() {
         return ResponseEntity.status(HttpStatus.OK).body("{ \"message\": \"Este es un endpoint de administrador. Podes ver esta respuesta porque tu usuario tiene el rol 'adminstrador'\"}");
     }

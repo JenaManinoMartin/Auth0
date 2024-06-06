@@ -1,4 +1,5 @@
-package com.example.auth0api.configuration.security;
+package com.example.auth0.configuration.security;
+
 
 import org.springframework.security.oauth2.core.OAuth2Error;
 import org.springframework.security.oauth2.core.OAuth2TokenValidator;

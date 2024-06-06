@@ -1,4 +1,4 @@
-package com.example.auth0api.configuration.security;
+package com.example.auth0.configuration.security;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -91,7 +91,7 @@ public class SecurityConfiguration {
     @Bean
     JwtAuthenticationConverter jwtAuthenticationConverter() {
         JwtGrantedAuthoritiesConverter converter = new JwtGrantedAuthoritiesConverter();
-        converter.setAuthoritiesClaimName("https://example_yt/roles");
+        converter.setAuthoritiesClaimName("https://my-app.example.com/roles");
         converter.setAuthorityPrefix("");
 
         JwtAuthenticationConverter jwtConverter = new JwtAuthenticationConverter();
